@@ -37,7 +37,7 @@
   .wrapper {
     display:flex;
     flex-direction: column;
-    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    font-family: 'Segoe UI', Candara, 'Bitstream Vera Sans', 'DejaVu Sans', 'Bitsream Vera Sans', 'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
     margin:10px;
   }
   
@@ -168,8 +168,8 @@
   }
   
   img {
-    object-fit: cover;
-    position: absolute;
+    object-fit: scale-down;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;

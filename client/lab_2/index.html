@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Leslie Cruz-Ochoa Lab 2: CSS Selectors</title> 
+    <div class="wrapper">
+    <head> 
+        <title class="title">Leslie Cruz-Ochoa Lab 2: CSS Selectors</title>
         <link rel='stylesheet' href='styles.css'/>
     </head>    
     <body>
-        <h1>Leslie Cruz-Ochoa Lab 2: CSS Selectors</h1>
-        <h1>Selectors</h1>
-        <h1>Main Page</h1>
+        <nav><a><h1 class="nav">
+            <a href="selectors.html">Selectors</a>
+            <a href="index.html">Main Page</a>
+        </h1></a></nav>
 
-        <h2>First, the basics.</h2>
+        <h2 class="subtitle">First, the basics.</h2>
     
         <p>You need the following to build your website.</p>
         
+        <div class="section_1">
         <ul>
             <li>HTML and CSS</li>
             <li>Javascript</li>
@@ -29,7 +32,10 @@
             <li>Learn popular web dev frameworks</li>
             <li>Successfully apply all knowledge to future projects</li>
         </ol>
+    </div>
 
+    <div class="section_2">
+        <div class="subtitle">
         <h2>Let's Try Some Inline Elements</h2>
         
         <p>Sometimes you want to <em>draw attention to something</em> in a line of text.</p>
@@ -37,23 +43,42 @@
         <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text.</p>
         
         <p>Sometimes you want to <em><strong>do both.</strong></em></p>
-        
-        <h2>Empty Elements</h2>
+        </div>
+    </div>
+
+    <div class="section_3">
+        <h2 class="subtitle">Empty Elements</h2>
         
         <p>Soft line breaks can't wrap anything. <br/> Neither can image tags, or hard lines.</p>
         <p>Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.</p>
-        
-        <hr/>
+    </div>
 
-        <h2>Images</h2>
+        <hr>
+
+    <div class="section_4">
+        <div class="text">
+            <div class="left">
+                <div class="ul">
+        <h2 class="subtitle">Images</h2>
         <p>Don't forget to use alt text on your images. It's important for accessibility.</p>
+                </div>
+            </div>
 
-        <img src='../lab_2/images/onigiri_1.png' alt='Onigiri 1'></img>
-        <img src='../lab_2/images/onigiri_2.png' alt='Onigiri 2'></img>
-        <img src='../lab_2/images/onigiri_3.png' alt='Onigiri 3'></img>
-        <img src='../lab_2/images/onigiri_4.png' alt='Onigiri 4'></img>
+                    <div class="right">
+        <img class="slides" src='../lab_2/images/onigiri_1.png' alt='Onigiri 1'></img>
+        <img class="slides" src='../lab_2/images/onigiri_2.png' alt='Onigiri 2'></img>
+        <img class="slides" src='../lab_2/images/onigiri_3.png' alt='Onigiri 3'></img>
+        <img class="slides" src='../lab_2/images/onigiri_4.png' alt='Onigiri 4'></img>
+                    </div>
+        </div>
+    </div>
 
-        <p><a href='https://github.com/lesliejcruz/INST377-Lab-Work'>My github can be found here.</a></p>
-        <p>If you want your repo to be private, be sure to invite Prof A as a "collaborator."</p>
+        </hr>
+
+        <p class="title"><a href='https://github.com/lesliejcruz/INST377-Lab-Work'>My github can be found here.</a><br>
+        If you want your repo to be private, be sure to invite Prof A as a "collaborator."</p>
+
+        </div>  
+    </div>
     </body>
 </html>
