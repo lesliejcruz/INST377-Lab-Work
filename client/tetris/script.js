@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const ScoreDisplay = document.querySelector('#score');
   const StartBtn = document.querySelector('#start-button');
   const width = 10;
-  let currentPosition = 4;
-  let currentRotation = 0;
   let nextRandom = 0;
   let timerId;
   let score = 0;
@@ -54,6 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino];
+
+  let currentPosition = 4;
+  let currentRotation = 0;
 
   // randomly select a Tetromino and its first rotation
   let random = Math.floor(Math.random() * theTetrominoes.length);
