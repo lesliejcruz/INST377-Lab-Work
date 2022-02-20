@@ -178,6 +178,7 @@ nav a {
 
 .footer {
     color: #fff;
+    background-color: #D6E9FE;
     padding: 20 px 0;
     display: flex;
     justify-content: space-between;
@@ -185,6 +186,7 @@ nav a {
 
 .footer-item {
     border: 1px solid #fff;
+    background-color: #D6E9FE;
     height: 200 px;
     flex: 1;
 }
@@ -192,7 +194,7 @@ nav a {
 .footer-two {
     width: 900 px;
     height: 200 px;
-    align-items: center;
+    background-color: #D6E9FE;
 }
 
 .footer-one,
