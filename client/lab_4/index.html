@@ -1,19 +1,68 @@
-Leslie Cruz-Ochoa Lab 4: HTML Forms
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset='UTF-8'/>
+        <title>Leslie Cruz-Ochoa Lab 4: HTML Forms</title>
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
+    <body>
+        <h1 class='topbar'><span>Leslie Cruz-Ochoa Lab 4: HTML Forms</span></h1>
 
-today's date
-Database Demos
-Main Page
+    <div class='menu-container'>
+        <div class='menu'>
+            <h1 class='date'>Feb 20, 2022</h1>
+            <div class='links'>
+    <nav><a><h1 class='nav'>
+        <a href="data.html">Database Demos</a>
+        <a href="index.html">Main Page</a>
+    </h1></a></nav>
+            </div>
+        </div>
+    </div>
 
-Group Project Link (no site yet)
-Awesome Logo
-Github Link
+    <div class='header-container'>
+        <div class='header'>
+            <h2 class='gplink'>Group Project Link</h2>
+            <h2 class='logo'><img src='../lab_3/images/awesome-logo.svg'></img></h2>
+            <h2 class='git'><a href="https://github.com/lesliejcruz/INST377-Lab-Work">Github Link</a></h2>
+        </div>
+    </div>
 
-image_1
-image_2
-image_3
-image_4
-image_5
+    <div class='photo-grid-container'>
+        <div class='photo-grid'>
+            <div class='photo-grid-tem'>
+                <div class="carousel">
+                    <div class="carousel_item carousel_item--visible">
+                        <img src='../lab_3/images/one.svg'></img>
+                    </div>
+                    <div class="carousel_item carousel_item--hidden">
+                        <img src='../lab_3/images/two.svg'></img>
+                    </div>
+                    <div class="carousel_item carousel_item--hidden">
+                        <img src='../lab_3/images/three.svg'></img>
+                    </div>
+                    <div class="carousel_item carousel_item--hidden">
+                        <img src='../lab_3/images/four.svg'></img>
+                    </div>
+                    <div class="carousel_item carousel_item--hidden">
+                        <img src='../lab_3/images/five.svg'></img>
+                    </div>
 
-footer item 1
-footer item 2
-footer item 3
+                    <div class="carousel_actions">
+                        <button id="carousel_button--prev" aria-label="Previous slide"><</button>
+                        <button id="carousel_button--next" aria-label="Next slide">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='footer'>
+        <h2 class='footer-item footer-one'>Footer Item 1</h2>
+        <h2 class='footer-item footer-two'>Footer Item 2</h2>
+        <h2 class='footer-item footer-three'>Footer item 3</h2>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
