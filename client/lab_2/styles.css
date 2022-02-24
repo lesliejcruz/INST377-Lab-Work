@@ -294,10 +294,6 @@ nav a {
   display: block;
 }
 
-.section_4:hover {
-  background-color: blue;
-}
-
 .section_4 div.text{
   display: block;
   border-radius: 4px;
@@ -330,4 +326,3 @@ nav a {
 .grid img {
   width: 100px;
 }
->>>>>>> 21028e4015396aa7466f7494fce3c5ec89139772
