@@ -194,6 +194,7 @@ nav a {
 .footer-two {
     width: 900 px;
     height: 200 px;
+    align-items: center;
     background-color: #D6E9FE;
 }
 
