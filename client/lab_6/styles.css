@@ -63,7 +63,7 @@ body {
       margin-bottom: 20px;
   }
   
-    .form_item button {
+    .button {
         font-size: 16px;
         font-weight: bold;
   
@@ -77,11 +77,11 @@ body {
         cursor: pointer;
     }
   
-    .form_item button:hover {
+    .button:hover {
         background-color: #76aeed;
     }
   
-    .form_item button:active {
+    .button:active {
         background-color: #407fc7;
     }
 }
