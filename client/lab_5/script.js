@@ -21,7 +21,16 @@ function restoArrayMake(dataArray) {
 }
 
 function createhtmlList(collection) {
+  console.log('fired HTML creator');
   console.log(collection);
+  const targetList = document.querySelector('.resto-list');
+  targetList.innerHTML = '';
+  collection.forEach((item) => {
+    const {name} = item;
+    const displayName = name.toLowerCase();
+    const injectThisItem = `<li>${displayName}</li>`;
+    targetList.innerHTML += injectThisItem;
+  });
 }
 
 // As the last step of your lab, hook this up to index.html
