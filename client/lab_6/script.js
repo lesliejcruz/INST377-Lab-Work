@@ -39,7 +39,7 @@ async function mainEvent() {
   const submit = document.querySelector('.submit_button');
   submit.style.display = 'none';
 
-  const results = await fetch('/api/foodServicesPG'); // This accesses some data from our API
+  const results = await fetch('./api/foodServicesPG'); // This accesses some data from our API
   const arrayFromJson = await results.json(); // This changes it into data we can use - an object
   console.log(arrayFromJson);
   if (arrayFromJson.data.length > 0) {
