@@ -18,8 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-  
-/* Page Layout */
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -54,34 +53,4 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     margin: 5px;
-}
-  
-@media only screen and (min-wdith: 700px) {
-  .form_item {
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 20px;
-  }
-  
-    .button {
-        font-size: 16px;
-        font-weight: bold;
-  
-        color: #ffffff;
-        background-color: #5995da;
-  
-        border: none;
-        border-radius: 3px;
-  
-        padding: 10px 40px;
-        cursor: pointer;
-    }
-  
-    .button:hover {
-        background-color: #76aeed;
-    }
-  
-    .button:active {
-        background-color: #407fc7;
-    }
 }
