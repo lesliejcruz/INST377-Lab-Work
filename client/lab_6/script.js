@@ -40,11 +40,35 @@ async function mainEvent() {
 
   const results = await fetch('/api/foodServicesPG'); // This accesses some data from our API
   const arrayFromJson = await results.json(); // This changes it into data we can use - an object
+  // console.log(arrayFromJson);
+
+  // This if statement is to prevent a race condition on data load
   if (arrayFromJson.data.length > 0) {
+    submit.style.display = 'block';
+    
+    // const currentArray = []; // this ensures it will stay an array
+    let currentArray = []; // this allows us to change the car to anything we want
+    resto.addEventListener('input', async (event) => {
+      console.log(event.target.value);
+
+      if (currentArray.length < 1) {
+        // console.log('empty');
+        return;
+      }
+      // console.log(event.target.vallue);
+      currentArray.filter(item) => {
+        console.log(item);
+        console.log(item.name);
+        return item.name.includes(event.target.value);
+      };
+      // console.log(matchResto)
+    });
+
     form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
       submitEvent.preventDefault(); // This prevents your page from refreshing!
-      console.log('form submission'); // this is substituting for a "breakpoint"
-      submit.style.display = 'block';
+      // console.log('form submission'); // this is substituting for a "breakpoint"
+      // arrayFromJson.data - we're accessing a key called 'data' on the returned object
+      // it contains all 1,000 records we need
       const restoArray = restoArrayMake(arrayFromJson.data);
       createHtmlList(restoArray);
     });
