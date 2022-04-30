@@ -44,15 +44,26 @@ async function mainEvent() {
   console.log(arrayFromJson);
   if (arrayFromJson.data.length > 0) {
     submit.style.display = 'block';
+    let currentArray = [];
+    restoArrayMake.addEventListener('input', async (event) => {
+      console.log(event.target.value);
+    });
+
+    const selectResto = arrayFromJson.data.filter((item) => {
+      const lowerName = item.name.toLowerCase();
+      const lowerValue = event.target.value.toLowerCase();
+      return lowerName.includes(lowerValue);
+    });
+
     form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
       submitEvent.preventDefault(); // This prevents your page from refreshing!
-      console.log('form submission'); // this is substituting for a "breakpoint"
+      // console.log('form submission'); // this is substituting for a "breakpoint"
       // arrayFromJson.data - we're accessing a key called 'data' on the returned object
       // it contains all 1,000 records we need
-      const restoArray = restoArrayMake(arrayFromJson.data);
+      currentArray = restoArrayMake(arrayFromJson.data);
+      console.log(currentArray);
       createhtmlList(restoArray);
-    });
-  }
+  });
 }
 // this actually runs first! It's calling the function above
 document.addEventListener('DOMContentLoaded', async () => mainEvent());
